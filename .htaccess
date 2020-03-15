@@ -1,0 +1,21 @@
+Options -Indexes
+RewriteEngine on
+# RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
+# %{HTTP_HOST} = domain
+# %{REQUEST_URI} = /vl_web/...
+
+# rewrite pages
+RewriteRule ^login$  ./login.php [L]
+RewriteRule ^reglement$  ./rules.php [L]
+RewriteRule ^changelog$  ./changelog.php [L]
+RewriteRule ^government/lspd/$  ./government/panel/index.php?team=LSPD [L]
+RewriteRule ^government/bcso/$  ./government/panel/index.php?team=BCSO [L]
+
+# 404 image
+# RewriteRule \.(gif|jpe?g|png|bmp) ./assets/img/misc/404.png [NC,L]
+
+# Ht Errors
+ErrorDocument 404 /vl_web/assets/resources/hterr/index.php?error=404
+ErrorDocument 403 /vl_web/assets/resources/hterr/index.php?error=403
+ErrorDocument 500 /vl_web/assets/resources/hterr/index.php?error=500
+ErrorDocument 503 /vl_web/assets/resources/hterr/index.php?error=503
