@@ -10,7 +10,7 @@
 <?php if ($file != "index"): ?>
     <div class="navbar-fixed">
 <?php endif; ?>
-    <nav class="blue-grey darken-4 z-depth-1 <?php echo $file == "index" ? "navindex" : ''; ?>" style="z-index:10!important;">
+    <nav class="grey darken-6 z-depth-1 <?php echo $file == "index" ? "navindex" : ''; ?>" style="z-index:10!important;">
         <div class="nav-wrapper">
             <a href="#" data-target="sidenav" class="left show-on-medium-and-down hide-on-large-only brand-logo white-text"><img src="<?= $wURL ?>assets/img/logo/logo.png" alt="logo" style="height:60px;"></a>
             <a href="#" data-target="sidenav" class="sidenav-trigger right show-on-medium-and-down brand-logo white-text"><i class="material-icons right">menu</i></a>
@@ -26,7 +26,7 @@
                 <li class="<?php echo $file == "server" ? "active" : ''; ?>"><a class="dropdown-trigger white-text tooltipped"  data-position="bottom" data-tooltip="Serveur" href="#!" data-target="server"><i class="fas fa-server material-icons center"></i> </a></li>
             </ul>
         </div>
-        <div id="scroll-line" class="blue-grey darken-4">
+        <div id="scroll-line" style="background: linear-gradient(to right, #fafafa, #060606);">
             <div class="scroll-line"></div>
         </div>
     </nav>

@@ -10,7 +10,14 @@
     <title><?= $GLOBAL['title'] ?> | Accueil</title>
     <link rel="icon" type="image/png" href="<?= $wURL; ?>assets/img/logo/logo.png">
 </head>
-<body class="grey darken-3">
+<body class="grey darken-5">
+
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large red" onclick="topFunction()">
+        <i class="large material-icons">mode_edit</i>
+      </a>
+    </div>
+
     <div id="loader-wrapper">
         <div id="loader"></div>
         <div class="loader-section section-left"></div>
