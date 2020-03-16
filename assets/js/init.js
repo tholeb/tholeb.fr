@@ -39,9 +39,6 @@ $(document).ready(function() {
     $('input#input_text, textarea#input_text').characterCounter();
   });
 
-$('#input_text').val('');
-M.textareaAutoResize($('#input_text'));
-
 /* Datepicker */
 $(document).ready(function () {
     $('.datepicker').datepicker({
@@ -99,7 +96,7 @@ $(document).ready(function () {
 $('.carousel').carousel();
 setInterval(function () {
     $('.job_carousel').carousel('next');
-}, 2000); // every 2 seconds 
+}, 2000); // every 2 seconds
 
 /* Material boxed */
 $(document).ready(function () {

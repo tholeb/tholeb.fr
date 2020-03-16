@@ -1,6 +1,9 @@
 @charset "UTF-8";
 @import "vars";
 
+nav li a:hover {
+  background-color: $color-fade2
+}
 @font-face {
   font-family: "signpainter";
   src: url("../fonts/SignPainter-HouseScript.ttf");
@@ -34,6 +37,7 @@
   margin-bottom: 0px;
   background: linear-gradient(to right, $color-fade1, $color-fade2);
   width: 0%;
+  transition: 0.1s;
 }
 
 .gradient {
@@ -406,29 +410,6 @@ input[type="range"]::-ms-thumb {
   transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
 }
 
-/* additional color */
-.blue-grey.darken-4 {
-  background-color: #1d2127 !important;
-}
-
-.grey.darken-3 {
-  background-color: #181821 !important;
-}
-
-.grey.darken-5 {
-  background-color: #0e0e0e !important;
-}
-
-.grey.darken-6 {
-  background-color: #060606 !important;
-}
-
-.green-text.text-accent-5 {
-  color: #00f485 !important;
-}
-.green-text.text-accent-6 {
-  color: #057945 !important;
-}
 .badge.green.accent-5 {
   background-color: #00f485 !important;
   color: black !important;
@@ -682,7 +663,7 @@ body {
   margin: -75px 0 0 -75px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: $color-fade1;
+  border-top-color: black;
   -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
   animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
   z-index: 9999;
@@ -697,7 +678,7 @@ body {
   bottom: 5px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #ffffff;
+  border-top-color: #9e9e9e;
   -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
   animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
 }
@@ -746,7 +727,7 @@ body {
   top: 0;
   width: 51%;
   height: 100%;
-  background: #0e0e0e;
+  background: #222222;
   z-index: 9998;
 }
 

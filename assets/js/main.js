@@ -1,34 +1,3 @@
-var setCookie = function(n, val) {
-  var exdays = 30;
-  var d = new Date();
-  d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
-  var expires = "expires=" + d.toGMTString();
-  document.cookie = n + "=" + val + "; " + expires;
-};
-
-var getCookie = function(n) {
-  var name = n + "=";
-  var ca = document.cookie.split(";");
-  for (var i = 0; i < ca.length; i++) {
-    var c = ca[i];
-    while (c.charAt(0) == " ") c = c.substring(1);
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-};
-
-window.onload = function() {
-  var favColor = document.body.style.backgroundColor;
-  var color = getCookie("color");
-  if (color === "") {
-    document.body.style.backgroundColor = favColor;
-  } else {
-    document.body.style.backgroundColor = color;
-  }
-};
-
 /* Color Switch */
 $("#light-switch").on("change", function() {
   if (this.checked) {
@@ -136,10 +105,25 @@ $(window).scroll(function() {
     docHeight = $(document).height(),
     winHeight = $(window).height();
 
-  var scrolled = (wintop / (docHeight - winHeight)) * 100;
+  var scrolledprct = (wintop / (docHeight - winHeight)) * 100;
+  var scrolled = (wintop / (docHeight - winHeight));
+  console.log(scrolled);
+  console.log(scrolledprct+"%");
 
-  $(".scroll-line").css("width", scrolled + "%");
+  if($(this).scrollTop() > 937) {
+    $('#scroll-button').css({'opacity': scrolled});
+    $('#scroll-button').css({'display': 'block'});
+  } else {
+    $('#scroll-button').css({'opacity': '0'});
+    $('#scroll-button').css({'display': 'none'});
+  }
+  $(".scroll-line").css("width", scrolledprct + "%");
 });
+
+function scrollToTop() {
+		$("html, body").animate({scrollTop : 0},700);
+		return false;
+	}
 
 $(document).ready(function() {
   setTimeout(function() {
@@ -697,24 +681,3 @@ wow = new WOW(
 }
 )
 wow.init();
-
-
-//Get the button
-var mybutton = document.getElementById("top-button");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
