@@ -107,8 +107,6 @@ $(window).scroll(function() {
 
   var scrolledprct = (wintop / (docHeight - winHeight)) * 100;
   var scrolled = (wintop / (docHeight - winHeight));
-  console.log(scrolled);
-  console.log(scrolledprct+"%");
 
   if($(this).scrollTop() > 937) {
     $('#scroll-button').css({'opacity': scrolled});

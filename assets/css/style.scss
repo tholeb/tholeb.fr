@@ -35,7 +35,7 @@ nav li a:hover {
 .scroll-line {
   height: 3px;
   margin-bottom: 0px;
-  background: linear-gradient(to right, $color-fade1, $color-fade2);
+  background: linear-gradient(to right, $color-fade1, #292929);
   width: 0%;
   transition: 0.1s;
 }

@@ -31,18 +31,10 @@
       <meta name="keywords" content="tholeb, thomas lebreton, lebreton">
       <meta name="description" content="French student's website.">
       <meta name="author" content='Thomas "tholeb" Lebreton' />
-      <title>tholeb.fr | Accueil ￶￶ ￶ ￶</title>
-      <script type="text/javascript">
-      var titleText = document.title;
-      function titleMarquee() {
-       titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
-       document.title = titleText;
-       setTimeout("titleMarquee()", 450);
-       }
-      </script>
+      <title>tholeb.fr</title>
     </head>
 
-    <body class="grey darken-6" style="overflow-x:hidden;" onload="titleMarquee()">
+    <body class="grey darken-6" style="overflow-x:hidden;">
       <div id="loader-wrapper">
           <div id="loader"></div>
           <div class="loader-section section-left"></div>
@@ -80,7 +72,7 @@
                                   <div class="card grey darken-6 hoverable z-depth-5">
                                       <div class="card-content white-text center">
                                           <span class="card-title">My projects</span>
-                                          <p><span>During my five years of devlopment and learning, i've created many projects, and some are publics. You can see them on <a class="github footer-icons" href="https://github.com/tholeb/" ><i class="fab fa-github"></i> Github</a>and also below!</p>
+                                          <p><span>During my five years of devlopment and learning, i've created many projects, and some are publics. You can see them on <a class="github" href="https://github.com/tholeb/" ><i class="fab fa-github"></i> Github</a> and also below!</p>
                                       </div>
                                   </div>
                               </div>
@@ -89,7 +81,7 @@
                       <div class="row">
                           <div class="col l5 offset-l2">
                               <div class="hide-on-med-and-down right">
-                                  <a href="<?= $connectLink ?>" class="waves-effect pulse waves-light btn-large black grey-text text-lighten-4 z-depth-5" target="_blank">My projects</a>
+                                  <a href="<?= $wURL; ?>projects" class="waves-effect pulse waves-light btn-large black grey-text text-lighten-4 z-depth-5" target="_blank">My projects</a>
                               </div>
                           </div>
                       </div>
@@ -107,9 +99,7 @@
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="<?= $wURL; ?>projects" class="tooltipped" data-position="bottom" data-tooltip="My Project/Mes projets"><i class="material-icons grey-text center">code</i></a></li>
             <li><a href="<?= $wURL; ?>contact" class="tooltipped" data-position="bottom" data-tooltip="Contact me/Me contacter"><i class="far fa-envelope material-icons grey-text center"></i></a></li>
-            <li><a href="<?= $wURL; ?>contact" class="tooltipped" data-position="bottom" data-tooltip="Curriculum Vitae"><i class="fas fa-address-book material-icons grey-text center"></i></a></li>
-            <li><a href="<?= $wURL; ?>login" class="tooltipped" data-position="bottom" data-tooltip="Sign in/S'enregistrer"><i class="fas fa-sign-in-alt grey-text material-icons center"></i></a></li>
-          </ul>
+            <li><a href="<?= $wURL; ?>cv" class="tooltipped" data-position="bottom" data-tooltip="Curriculum Vitae"><i class="fas fa-address-book material-icons grey-text center"></i></a></li>  </ul>
         </div>
         <div id="scroll-line" class="grey darken-7">
             <div class="scroll-line"></div>
@@ -133,21 +123,21 @@
                           <div class="icon-block">
                               <h2 class="center grey-text"><i class="material-icons medium fas fa-user"></i></h2>
                               <h5 class="center white-text">Who am I?</h5>
-                              <p class="light white-text center">I'm an 18 years old high school students loving HighTechs and IT, passionate about discovering and learning things by myself. </p>
+                              <p class="light white-text center">I'm a eighteen year old high school student, passionate about HighTechs, computer science, and video games. I love discovering and learning new things by myself.</p>
                           </div>
                       </div>
                       <div class="col s12 m6 l6 xl4">
                           <div class="icon-block">
-                              <h2 class="center grey-text"><i class="material-icons medium fas fa-code"></i></h2>
-                              <h5 class="center white-text">Projects</h5>
-                              <p class="light white-text center">dsqdsq</p>
+                              <h2 class="center grey-text"><i class="material-icons medium grey-text center">code</i></h2>
+                              <h5 class="center white-text">My projects</h5>
+                              <p class="light white-text center">You can see my work either on <a class="github" href="https://github.com/tholeb/"><i class="fab fa-github"></i> Github</a> <i>(public repos only)</i>, either on this website.</p>
                           </div>
                       </div>
                       <div class="col s12 m12 l12 xl4">
                           <div class="icon-block">
-                              <h2 class="center grey-text"><i class="material-icons medium fas fa-mobile-alt"></i></h2>
-                              <h5 class="center white-text">Roleplay illimité</h5>
-                              <p class="light white-text center">ds</a></p>
+                              <h2 class="center grey-text"><i class="material-icons medium grey-text center">games</i></h2>
+                              <h5 class="center white-text">Work and Passion</h5>
+                              <p class="light white-text center">With my passion of video games, I realized many projects for it. It allows me to combine passion, and work.</a></p>
                           </div>
                       </div>
                   </div>
@@ -155,20 +145,33 @@
           </div>
       </div>
       <div class="parallax-container" style="height:350px;">
-          <div class="container">
+          <div class="container show-on-medium-and-up hide-on-small-only">
               <div class="section no-pad-bot">
-                  <h4 class="white-text center bebas" style="letter-spacing:1rem;margin-top:5%;"><span class="neon">Qu'est ce que vous attendez,<span class="purple-text text-accent-3 neonprpl">Rejoignez-nous</span>!</span></h4> <br> <br> <br>
-                  <div class="row">
-                      <div class="col l5">
-                          <div class="hide-on-med-and-down right">
-                              <a href="<?= $connectLink ?>" class="waves-effect pulse waves-light btn-large grey darken-3 grey-text text-lighten-4 z-depth-5" target="_blank">Jouer maintenant!</a>
-                          </div>
+                  <h4 class="white-text center bebas" style="letter-spacing:1rem;"><span class="neon">Few numbers</span></h4>
+                  <div class="row center-align valign valign-wrapper">
+                      <div class="col s12 m6 l3">
+                        <i class="material-icons fab fa-github white-text fa-4x"></i>
+                        <div class="divider"></div>
+                        <h4 class="white-text neon"><span class="repositories_count"></span></h4>
+                        <h5 class="white-text tooltipped2 bebas neon">Public repos</h5>
                       </div>
-                      <div class="col l2"></div>
-                      <div class="col l5">
-                          <div class="hide-on-med-and-down left">
-                              <a href="<?= $discordLink ?>" class="waves-effect pulse waves-light btn-large grey darken-3 grey-text text-lighten-4 z-depth-5" target="_blank">Nous rejoindre!</a>
-                          </div>
+                      <div class="col s12 m6 l3">
+                        <i class="material-icons fab fa-github white-text fa-4x"></i>
+                        <div class="divider"></div>
+                        <h4 class="white-text neon"><span class="repositories_count"></span></h4>
+                        <h5 class="white-text tooltipped tooltipped2 bebas neon" data-position='bottom' data-tooltip="">Public repos</h5>
+                      </div>
+                      <div class="col s12 m6 l3">
+                        <i class="material-icons fab fa-github white-text fa-4x"></i>
+                        <div class="divider"></div>
+                        <h4 class="white-text neon"><span class="repositories_count"></span></h4>
+                        <h5 class="white-text tooltipped tooltipped2 bebas neon" data-position='bottom' data-tooltip="">Public repos</h5>
+                      </div>
+                      <div class="col s12 m6 l3">
+                        <i class="material-icons fab fa-github white-text fa-4x"></i>
+                        <div class="divider"></div>
+                        <h4 class="white-text neon"><span class="repositories_count"></span></h4>
+                        <h5 class="white-text tooltipped tooltipped2 bebas neon" data-position='bottom' data-tooltip="">Public repos</h5>
                       </div>
                   </div>
               </div>
@@ -177,14 +180,29 @@
               <img src="<?= $randomImageParallax ?>" alt="background image missing please contact an admin">
           </div>
       </div>
-
-
+      <div class="section" id="github">
+        <div class="container">
+          <div class="row">
+            <h3 class="white-text center animate fadeInLeftBig">My public projects</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="divider"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="repositories"></div>
+          </div>
+        </div>
+      </div>
       <footer class="page-footer grey darken-7">
         <div class="container">
           <div class="row">
             <div class="col l6 s12">
               <h5 class="white-text">Who am I ?</h5>
-              <p class="grey-text text-lighten-4">I'm passionate about IT, HighTechs and devlopment. I love discovering and learning new things by myself.</p>
+              <p class="grey-text text-lighten-4">I'm a eighteen year old high school student, passionate about HighTechs, computer science, and video games. I love discovering and learning new things by myself.</p>
             </div>
           </div>
         </div>
@@ -215,5 +233,33 @@
       <script src="assets/js/materialize.min.js"></script>
       <script src="assets/js/init.min.js"></script>
       <script src="assets/js/main.min.js"></script>
+      <script type="text/javascript">
+        var request = new XMLHttpRequest();
+        request.open('GET','https://api.github.com/users/tholeb/repos' ,true)
+        request.onload = function() {
+            var data = JSON.parse(this.response);
+            //console.log(data);
+            var statusHTML = '';
+            $.each(data, function(i, status){
+                statusHTML += '<div class="col s12 m4 l4">  \
+                  <div class="card grey darken-7"> \
+                    <div class="card-content white-text"> \
+                      <span class="card-title grey-text">' + status.name +  '</span> \
+                      <p>' + status.description +  '</p> \
+                      <p>License: ' + status.license.name +  '</p> \
+                    </div> \
+                    <div class="card-action">\
+                      <a href="' + status.html_url +  '" class="grey-text"><i class="fas fa-link"></i></i> Link</a> \
+                      <a href="#" class="grey-text"><i class="fas fa-star"></i> ' + status.stargazers_count +  '</a> \
+                      <a href="' + status.forks_url +  '" class="grey-text"><i class="fas fa-code-branch"></i></i> ' + status.forks_count + '</a> \
+                    </div> \
+                  </div> \
+                </div>';
+            });
+            $('.repositories').html(statusHTML);
+            $('.repositories_count').html(data.length);
+        }
+        request.send();
+      </script>
     </body>
   </html>
