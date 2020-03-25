@@ -6,31 +6,7 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-      <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
-      <link type="text/css" rel="stylesheet" href="assets/css/style.min.css"  media="screen,projection"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <link rel="shortcut icon" href="assets/img/logo/tholeb.png">
-      <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
-      <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
-      <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
-      <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
-      <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
-      <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
-      <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
-      <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
-      <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
-      <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-icon-192x192.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-      <link rel="manifest" href="assets/img/favicon/manifest.json">
-      <meta name="msapplication-TileColor" content="#ffffff">
-      <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
-      <meta name="theme-color" content="#ffffff">
-      <meta name="keywords" content="tholeb, thomas lebreton, lebreton">
-      <meta name="description" content="French student's website.">
-      <meta name="author" content='Thomas "tholeb" Lebreton' />
+      <?php include('assets/resources/meta/head.php') ?>
       <title>tholeb.fr</title>
     </head>
 
@@ -147,31 +123,31 @@
       <div class="parallax-container" style="height:350px;">
           <div class="container show-on-medium-and-up hide-on-small-only">
               <div class="section no-pad-bot">
-                  <h4 class="white-text center bebas" style="letter-spacing:1rem;"><span class="neon">Few numbers</span></h4>
+                  <h4 class="white-text center bebas" style="letter-spacing:1rem;padding-bottom:20px;"><span class="neon">Few numbers</span></h4>
                   <div class="row center-align valign valign-wrapper">
                       <div class="col s12 m6 l3">
-                        <i class="material-icons fab fa-github white-text fa-4x"></i>
+                        <i class="material-icons fab fa-github white-text fa-4x" style="padding-bottom:20px;"></i>
                         <div class="divider"></div>
                         <h4 class="white-text neon"><span class="repositories_count"></span></h4>
-                        <h5 class="white-text tooltipped2 bebas neon">Public repos</h5>
+                        <h5 class="white-text tooltipped bebas neon" data-position='bottom' data-tooltip="Total of public repos that I have">Public repos</h5>
                       </div>
                       <div class="col s12 m6 l3">
-                        <i class="material-icons fab fa-github white-text fa-4x"></i>
+                        <i class="material-icons fas fa-file white-text fa-4x" style="padding-bottom:20px;"></i>
                         <div class="divider"></div>
-                        <h4 class="white-text neon"><span class="repositories_count"></span></h4>
-                        <h5 class="white-text tooltipped tooltipped2 bebas neon" data-position='bottom' data-tooltip="">Public repos</h5>
+                        <h4 class="white-text neon"><span class="type_lang"></span></h4>
+                        <h5 class="white-text tooltipped tooltipped bebas neon" data-position='bottom' data-tooltip="Languages used for this project">Languages</h5>
                       </div>
                       <div class="col s12 m6 l3">
-                        <i class="material-icons fab fa-github white-text fa-4x"></i>
+                        <i class="material-icons fas fa-code white-text fa-4x" style="padding-bottom:20px;"></i>
                         <div class="divider"></div>
-                        <h4 class="white-text neon"><span class="repositories_count"></span></h4>
-                        <h5 class="white-text tooltipped tooltipped2 bebas neon" data-position='bottom' data-tooltip="">Public repos</h5>
+                        <h4 class="white-text neon"><span class="total_lines"></span></h4>
+                        <h5 class="white-text tooltipped tooltipped bebas neon" data-position='bottom' data-tooltip="Total lines of code for this project">Lines</h5>
                       </div>
                       <div class="col s12 m6 l3">
-                        <i class="material-icons fab fa-github white-text fa-4x"></i>
+                        <i class="material-icons fas fa-file-code white-text fa-4x" style="padding-bottom:20px;"></i>
                         <div class="divider"></div>
-                        <h4 class="white-text neon"><span class="repositories_count"></span></h4>
-                        <h5 class="white-text tooltipped tooltipped2 bebas neon" data-position='bottom' data-tooltip="">Public repos</h5>
+                        <h4 class="white-text neon"><span class="total_files"></span></h4>
+                        <h5 class="white-text tooltipped tooltipped bebas neon" data-position='bottom' data-tooltip="Total files in this project">Files</h5>
                       </div>
                   </div>
               </div>
@@ -228,38 +204,7 @@
       </footer>
 
 
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-      <script src="https://kit.fontawesome.com/37a49bd997.js" crossorigin="anonymous"></script>
-      <script src="assets/js/materialize.min.js"></script>
-      <script src="assets/js/init.min.js"></script>
-      <script src="assets/js/main.min.js"></script>
-      <script type="text/javascript">
-        var request = new XMLHttpRequest();
-        request.open('GET','https://api.github.com/users/tholeb/repos' ,true)
-        request.onload = function() {
-            var data = JSON.parse(this.response);
-            //console.log(data);
-            var statusHTML = '';
-            $.each(data, function(i, status){
-                statusHTML += '<div class="col s12 m4 l4">  \
-                  <div class="card grey darken-7"> \
-                    <div class="card-content white-text"> \
-                      <span class="card-title grey-text">' + status.name +  '</span> \
-                      <p>' + status.description +  '</p> \
-                      <p>License: ' + status.license.name +  '</p> \
-                    </div> \
-                    <div class="card-action">\
-                      <a href="' + status.html_url +  '" class="grey-text"><i class="fas fa-link"></i></i> Link</a> \
-                      <a href="#" class="grey-text"><i class="fas fa-star"></i> ' + status.stargazers_count +  '</a> \
-                      <a href="' + status.forks_url +  '" class="grey-text"><i class="fas fa-code-branch"></i></i> ' + status.forks_count + '</a> \
-                    </div> \
-                  </div> \
-                </div>';
-            });
-            $('.repositories').html(statusHTML);
-            $('.repositories_count').html(data.length);
-        }
-        request.send();
-      </script>
+      <?php include('assets/resources/meta/scripts.php') ?>
+      <script src="assets/js/api_github.min.js" charset="utf-8"></script>
     </body>
   </html>

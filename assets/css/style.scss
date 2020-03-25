@@ -1,6 +1,10 @@
 @charset "UTF-8";
 @import "vars";
 
+html {
+  scroll-behavior: smooth;
+}
+
 nav li a:hover {
   background-color: $color-fade2
 }
