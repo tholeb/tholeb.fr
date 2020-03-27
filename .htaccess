@@ -1,8 +1,5 @@
 Options -Indexes
 RewriteEngine on
-# RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
-# %{HTTP_HOST} = domain
-# %{REQUEST_URI} = /vl_web/...
 
 # rewrite pages
 RewriteRule ^projects$  ./projects.php [L]
@@ -11,9 +8,6 @@ RewriteRule ^error/403$  ./errors.php?error=403 [L]
 RewriteRule ^error/500$  ./errors.php?error=500 [L]
 RewriteRule ^error/503$  ./errors.php?error=503 [L]
 RewriteRule ^error/$  ./errors.php [L]
-# 404 image
-# RewriteRule \.(gif|jpe?g|png|bmp) ./assets/img/misc/404.png [NC,L]
-
 # Ht Errors
 ErrorDocument 404 /tholeb.fr/error/404
 ErrorDocument 403 /tholeb.fr/error/403
