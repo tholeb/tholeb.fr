@@ -3,7 +3,7 @@
 $(document).ready(function () {
     $('.sidenav').sidenav({
         draggable: true,
-        edge: 'right',
+        edge: 'left',
     });
 });
 

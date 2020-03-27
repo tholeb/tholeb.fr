@@ -5,7 +5,7 @@ RewriteEngine on
 # %{REQUEST_URI} = /vl_web/...
 
 # rewrite pages
-RewriteRule ^login$  ./login.php [L]
+RewriteRule ^projects$  ./projects.php [L]
 
 # 404 image
 # RewriteRule \.(gif|jpe?g|png|bmp) ./assets/img/misc/404.png [NC,L]
