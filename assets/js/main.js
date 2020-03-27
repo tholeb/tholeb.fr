@@ -7,13 +7,7 @@ $(window).scroll(function() {
   var scrolledprct = (wintop / (docHeight - winHeight)) * 100;
   var scrolled = (wintop / (docHeight - winHeight));
 
-  if($(this).scrollTop() > 937) {
-    $('#scroll-button').css({'opacity': scrolled});
-    $('#scroll-button').css({'display': 'block'});
-  } else {
-    $('#scroll-button').css({'opacity': '0'});
-    $('#scroll-button').css({'display': 'none'});
-  }
+  $('#scroll-button').css({'opacity': scrolled});
   $(".scroll-line").css("width", scrolledprct + "%");
 });
 

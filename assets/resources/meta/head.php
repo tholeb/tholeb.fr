@@ -19,6 +19,7 @@
 <link rel="manifest" href="assets/img/favicon/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 <meta name="theme-color" content="#ffffff">
 <meta name="keywords" content="tholeb, thomas lebreton, lebreton">
 <meta name="description" content="French student's website.">

@@ -71,7 +71,7 @@
               <div class="row">
                   <h3 class="white-text center animate fadeInLeftBig">About me</h3>
                   <div class="container">
-                      <div class="row">
+                      <div class="row animate fadeIn">
                           <div class="container">
                               <div class="row">
                                   <div class="divider"></div>
@@ -115,28 +115,28 @@
       <div class="parallax-container hide-on-med-and-down" style="height:350px;">
           <div class="container show-on-medium-and-up hide-on-small-only">
               <div class="section no-pad-bot">
-                  <h4 class="white-text center bebas" style="letter-spacing:1rem"><span class="neon">Few numbers</span></h4>
-                  <h6 class="white-text center bebas" style="padding-bottom:20px;"><span class="neon">Hover me to get more infos</span></h6>
+                  <h4 class="white-text center bebas animate fadeInLeftBig" style="letter-spacing:1rem"><span class="neon">Few numbers</span></h4>
+                  <h6 class="white-text center bebas animate fadeInRightBig" style="padding-bottom:20px;"><span class="neon">Hover me to get more infos</span></h6>
                   <div class="row center-align valign valign-wrapper">
-                      <div class="col s12 m6 l3">
+                      <div class="col s12 m6 l3 animate fadeInLeft">
                         <i class="material-icons fab fa-github white-text fa-4x" style="padding-bottom:20px;"></i>
                         <div class="divider"></div>
                         <h4 class="white-text neon"><span class="repositories_count"></span></h4>
                         <h5 class="white-text tooltipped bebas neon" data-position='bottom' data-tooltip="Total of public repos that I have">Public repos</h5>
                       </div>
-                      <div class="col s12 m6 l3">
+                      <div class="col s12 m6 l3 animate fadeInLeft">
                         <i class="material-icons fas fa-file white-text fa-4x" style="padding-bottom:20px;"></i>
                         <div class="divider"></div>
                         <h4 class="white-text neon"><span class="type_lang"></span></h4>
                         <h5 class="white-text tooltipped tooltipped bebas neon" data-position='bottom' data-tooltip="Languages used for this project">Languages</h5>
                       </div>
-                      <div class="col s12 m6 l3">
+                      <div class="col s12 m6 l3 animate fadeInRight">
                         <i class="material-icons fas fa-code white-text fa-4x" style="padding-bottom:20px;"></i>
                         <div class="divider"></div>
                         <h4 class="white-text neon"><span class="total_lines"></span></h4>
                         <h5 class="white-text tooltipped tooltipped bebas neon" data-position='bottom' data-tooltip="Total lines of code for this project">Lines</h5>
                       </div>
-                      <div class="col s12 m6 l3">
+                      <div class="col s12 m6 l3 animate fadeInRight">
                         <i class="material-icons fas fa-file-code white-text fa-4x" style="padding-bottom:20px;"></i>
                         <div class="divider"></div>
                         <h4 class="white-text neon"><span class="total_files"></span></h4>
@@ -154,7 +154,7 @@
           <div class="row">
             <h3 class="white-text center animate fadeInLeftBig">My public projects</h3>
             <div class="container">
-                <div class="row">
+                <div class="row animate fadeIn">
                     <div class="container">
                         <div class="row">
                             <div class="divider"></div>

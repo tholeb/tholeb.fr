@@ -18,7 +18,7 @@
       $.each(data, function(i, status){
           statusHTML += ' \
           <div class="col s12 m4 l4">  \
-            <div class="card grey darken-7"> \
+            <div class="card grey darken-7 animate fadeInRightBig"> \
               <div class="card-content white-text"> \
                 <span class="card-title grey-text">' + status.name +  '</span> \
                 <p>' + status.description +  '</p> \
