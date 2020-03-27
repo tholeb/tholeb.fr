@@ -6,12 +6,16 @@ RewriteEngine on
 
 # rewrite pages
 RewriteRule ^projects$  ./projects.php [L]
-
+RewriteRule ^error/404$  ./errors.php?error=404 [L]
+RewriteRule ^error/403$  ./errors.php?error=403 [L]
+RewriteRule ^error/500$  ./errors.php?error=500 [L]
+RewriteRule ^error/503$  ./errors.php?error=503 [L]
+RewriteRule ^error/$  ./errors.php [L]
 # 404 image
 # RewriteRule \.(gif|jpe?g|png|bmp) ./assets/img/misc/404.png [NC,L]
 
 # Ht Errors
-ErrorDocument 404 /tholeb.fr/assets/resources/hterr/index.php?error=404
-ErrorDocument 403 /tholeb.fr/assets/resources/hterr/index.php?error=403
-ErrorDocument 500 /tholeb.fr/assets/resources/hterr/index.php?error=500
-ErrorDocument 503 /tholeb.fr/assets/resources/hterr/index.php?error=503
+ErrorDocument 404 /tholeb.fr/error/404
+ErrorDocument 403 /tholeb.fr/error/403
+ErrorDocument 500 /tholeb.fr/error/500
+ErrorDocument 503 /tholeb.fr/error/503
