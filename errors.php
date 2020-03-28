@@ -76,7 +76,7 @@
               <p class="center"><img src="https://i.pinimg.com/originals/5c/42/ca/5c42cad93c2d850ea46504e8470ab8a4.gif" alt="Nope"></p> <br> <br>
             </div>
             <div class="row">
-              <h6 class="white-text center"> Are you trying to break the website ? that's not very nice of you :'(</h6>
+              <h6 class="white-text center"> Are you trying to break the website ? that's not very nice of you :'( <br> Well, because I'm nice, I will let you <a href="<?= $wURL ?>" class="grey-text">go home <i class="fas fa-home"></i></a>.</h6>
             </div>
           </div>
           <audio autoplay controls style="display:none;">
