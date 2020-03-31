@@ -10,9 +10,11 @@
       <title>tholeb.fr</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
       <style media="screen">
-        .irs-bar{background-color:#060606!important}
-        .irs-single{background-color:#060606!important;}
-        ..irs-single:before{border-top-color:#060606!important}
+        .irs--flat .irs-from,.irs--flat .irs-to,.irs--flat .irs-single {background-color: #9e9e9e!important; color:black;}
+        .irs--flat .irs-from:before,.irs--flat .irs-to:before,.irs--flat .irs-single:before {border-top-color: white!important;}
+        .irs--flat .irs-bar {background-color: #212121!important;}
+        .irs--flat .irs-handle.state_hover>i:first-child,.irs--flat .irs-handle:hover>i:first-child {background-color: #9e9e9e!important}
+        .irs--flat .irs-handle>i:first-child {background-color: white!important;}
       </style>
     </head>
 
@@ -279,7 +281,7 @@
           <div class="row">
             <div class="col s12 l6 animate fadeInLeft">
               <h2 class="grey-text bebas">Thomas<strong style="font-size:4vw;" class="grey-text text-lighten-2">Lebreton</strong></h2>
-              <h5 class="grey-text"><i class="fas fa-birthday-cake"></i> Born the 22 October 2001</h5>
+              <h5 class="grey-text"><i class="fas fa-birthday-cake"></i> Né le 22 Octobre 2001</h5>
               <p class="grey-text"><i class="fas fa-map-marked"></i> 17 Avenue Vincent Van Gogh - 49240 Avrillé <br>
               <i class="fas fa-mobile-alt"></i> +33 6 02 29 76 20 <br>
               <a href="mailto:tholeb.pro@gmail.com" class="grey-text"><i class="far fa-envelope"></i> tholeb.pro@gmail.com</a> <br>
@@ -292,7 +294,7 @@
         </div><br> <br>
         <div class="container">
           <div class="row">
-            <h3 class="white-text center bebas animate fadeInLeftBig">Study and formations</h3>
+            <h3 class="white-text center bebas animate fadeInLeftBig">Etudes et formations</h3>
             <div class="divider animate fadeIn"></div>
             <div class="col s12 m3 l2 animate fadeInLeftBig">
               <p class="grey-text"><strong>2015-2016</strong></p>
@@ -300,28 +302,28 @@
             </div>
             <div class="col s12 m9 l10 animate fadeInRightBig">
               <p class="grey-text">Brevet des collèges - <strong>Mention: Assez bien</strong></p>
-              <p class="grey-text">Baccalauréat - <strong>Mention: ???</strong></p>
+              <p class="grey-text">Baccalauréat STI2D SIN - <strong>Mention: ???</strong></p>
             </div>
           </div> <br> <br> <br>
           <div class="row">
-            <h3 class="white-text center bebas animate fadeInLeftBig">Professional experiences</h3>
+            <h3 class="white-text center bebas animate fadeInLeftBig">Expériences professionnelles</h3>
             <div class="divider animate fadeIn"></div>
             <div class="col s12 m3 l2 animate fadeInLeftBig">
               <p class="grey-text"><strong>2015-2016</strong></p>
             </div>
             <div class="col s12 m9 l10 animate fadeInRightBig">
-              <p class="grey-text"><strong>Stage de 3ème à l'école vétérinaire de La Croix Cadeau, Avrillé</strong></p>
+              <p class="grey-text">Stage de 3ème à l'école vétérinaire de La Croix Cadeau, Avrillé</p>
             </div>
           </div> <br> <br> <br>
           <div class="row">
-            <h3 class="white-text center bebas animate fadeInLeftBig">Languages spoken & other skills</h3>
+            <h3 class="white-text center bebas animate fadeInLeftBig">Langues parlées et autres compétences</h3>
             <div class="divider animate fadeIn"></div>
             <div class="row">
               <div class="col s12 m3 l2 animate fadeInLeftBig">
-                <p><p class="grey-text"><strong>Espanol</strong></p></p>
+                <p><p class="grey-text"><strong>Anglais</strong></p></p>
               </div>
               <div class="col s12 m9 l10 animate fadeInRightBig">
-                <p class="grey-text"><strong>According to my english professor, I got B2+ level. Here is my Average during this two semester (17,26/20)</strong></p>
+                <p class="grey-text">Je possède le niveau B2+, j'ai <strong><i>17,26/20</i></strong> comme moyenne pour les deux trimestres</p>
                 <input type="text" class="enslider"/>
               </div>
             </div>
@@ -330,13 +332,13 @@
                 <p class="grey-text"><strong>Espanol</strong></p>
               </div>
               <div class="col s12 m9 l10 animate fadeInRightBig">
-                <p class="grey-text"><strong>According to my Spanish professor, I got B1 level. Here is my Average during this two semester (15,18/20)</strong></p>
+                <p class="grey-text">Je possède le niveau B1, j'ai <strong><i>15,18/20</i></strong> comme moyenne pour les deux trimestres</p>
                 <input type="text" class="espslider"/>
               </div>
             </div>
           </div> <br> <br> <br>
           <div class="row">
-            <h3 class="white-text center bebas animate fadeInLeftBig">Other experiences and hobbies</h3>
+            <h3 class="white-text center bebas animate fadeInLeftBig">Autres expériences et hobbies</h3>
             <div class="divider animate fadeIn"></div>
             <div class="col s12 m3 l2 animate fadeInLeftBig">
               <p class="grey-text"><strong>date</strong></p>
@@ -353,7 +355,6 @@
       <script src="assets/js/api_github.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
       <script type="text/javascript">
-
         $(".enslider").ionRangeSlider({
             min: 0,
             max: 20,
@@ -364,7 +365,6 @@
             max: 20,
             from: 15.18
         });
-
       </script>
     </body>
   </html>

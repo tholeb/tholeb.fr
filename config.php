@@ -15,6 +15,6 @@ if ($_SERVER['HTTP_HOST'] != 'tholeb.fr') {
 } else {
   $wURL = "$protocol://$_SERVER[HTTP_HOST]/";
 }
-require $aURL.'assets/resources/config/database.php';
+//require $aURL.'assets/resources/config/database.php';
 $GLOBAL['title'] = "tholeb.fr";
 ?>
