@@ -1,6 +1,6 @@
 <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-<link type="text/css" rel="stylesheet" href="<?= $wURL ?>assets/css/materialize.min.css"  media="screen,projection"/>
-<link type="text/css" rel="stylesheet" href="<?= $wURL ?>assets/css/style.min.css"  media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="<?= $wURL ?>assets/css/materialize.min.css">
+<link type="text/css" rel="stylesheet" href="<?= $wURL ?>assets/css/style.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link rel="shortcut icon" href="<?= $wURL ?>assets/img/logo/tholeb.png">
 <link rel="apple-touch-icon" sizes="57x57" href="<?= $wURL ?>assets/img/favicon/apple-icon-57x57.png">
@@ -24,3 +24,4 @@
 <meta name="keywords" content="tholeb, thomas lebreton, lebreton">
 <meta name="description" content="French student's website.">
 <meta name="author" content='Thomas "tholeb" Lebreton' />
+<script src="https://kit.fontawesome.com/80f1ec7be3.js" crossorigin="anonymous"></script>

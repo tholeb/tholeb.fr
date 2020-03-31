@@ -1,7 +1,10 @@
 <?php
+ini_set('error_reporting', E_ALL);
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+ini_set('display_errors', 'On');
+error_reporting(E_ALL | E_STRICT);
+
 header('Content-Type: text/html; charset=utf-8');
 $fileName = basename(__FILE__);
 $aURL = dirname(__FILE__)."/";
@@ -12,6 +15,6 @@ if ($_SERVER['HTTP_HOST'] != 'tholeb.fr') {
 } else {
   $wURL = "$protocol://$_SERVER[HTTP_HOST]/";
 }
-
+require $aURL.'assets/resources/config/database.php';
 $GLOBAL['title'] = "tholeb.fr";
 ?>

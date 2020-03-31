@@ -1,16 +1,16 @@
 <footer class="page-footer grey darken-7">
   <div class="container">
     <div class="row">
-      <div class="col l6 s12 animate fadeInLeftBig <?php echo $file == "error" ? "hide" : ''; ?>">
-        <h5 class="white-text">Who am I ?</h5>
+      <div class="col l4 s12 animate fadeInLeftBig <?php echo $file == "error" ? "hide" : ''; ?>">
+        <h5 class="white-text"><i class="material-icons grey-text center">help</i> Who am I ?</h5>
         <p class="grey-text text-lighten-4">I'm a eighteen year old high school student, passionate about HighTechs, computer science, and video games. I love discovering and learning new things by myself.</p>
       </div>
-      <div class="col l6 s12 animate fadeInRightBig <?php echo $file == "error" ? "hide" : ''; ?>">
-        <h5 class="white-text">About this website</h5>
+      <div class="col l8 s12 animate fadeInRightBig <?php echo $file == "error" ? "hide" : ''; ?>">
+        <h5 class="white-text"><i class="material-icons grey-text center">web</i> About this website</h5>
         <p class="grey-text text-lighten-4">
           This website has been designed on a KUbuntu 19.10 Virtual Machine using <a href="https://atom.io/" class="grey-text"><i class="fas fa-atom"></i> Atom IDE</a>.
           This website uses the github's API and the CodeTabs' API.
-          The <a class="grey-text" href="https://github.com/tholeb" ><i class="fab fa-github"></i> Github</a> of the project <a class="grey-text" href="https://github.com/tholeb/tholeb.fr" >here</a>.
+          Find the <a class="grey-text" href="https://github.com/tholeb" ><i class="fab fa-github"></i> Github</a> of the project <a class="grey-text" href="https://github.com/tholeb/tholeb.fr" >here</a>.
         </p>
       </div>
     </div>
