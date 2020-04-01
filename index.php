@@ -9,13 +9,7 @@
       <?php include('assets/resources/meta/head.php') ?>
       <title>tholeb.fr</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
-      <style media="screen">
-        .irs--flat .irs-from,.irs--flat .irs-to,.irs--flat .irs-single {background-color: #9e9e9e!important; color:black;}
-        .irs--flat .irs-from:before,.irs--flat .irs-to:before,.irs--flat .irs-single:before {border-top-color: white!important;}
-        .irs--flat .irs-bar {background-color: #212121!important;}
-        .irs--flat .irs-handle.state_hover>i:first-child,.irs--flat .irs-handle:hover>i:first-child {background-color: #9e9e9e!important}
-        .irs--flat .irs-handle>i:first-child {background-color: white!important;}
-      </style>
+      <link rel="stylesheet" href="assets/css/datatable.min.css">
     </head>
 
     <body class="grey darken-6" style="overflow-x:hidden;">
@@ -282,8 +276,7 @@
             <div class="col s12 l6 animate fadeInLeft">
               <h2 class="grey-text bebas">Thomas<strong style="font-size:4vw;" class="grey-text text-lighten-2">Lebreton</strong></h2>
               <h5 class="grey-text"><i class="fas fa-birthday-cake"></i> Né le 22 Octobre 2001</h5>
-              <p class="grey-text"><i class="fas fa-map-marked"></i> 17 Avenue Vincent Van Gogh - 49240 Avrillé <br>
-              <i class="fas fa-mobile-alt"></i> +33 6 02 29 76 20 <br>
+              <p class="grey-text"><i class="fas fa-map-marked"></i> Avrillé <br>
               <a href="mailto:tholeb.pro@gmail.com" class="grey-text"><i class="far fa-envelope"></i> tholeb.pro@gmail.com</a> <br>
             </p>
             </div>
@@ -297,8 +290,8 @@
             <h3 class="white-text center bebas animate fadeInLeftBig">Etudes et formations</h3>
             <div class="divider animate fadeIn"></div>
             <div class="col s12 m3 l2 animate fadeInLeftBig">
-              <p class="grey-text"><strong>2015-2016</strong></p>
-              <p class="grey-text"><strong>2019-2020</strong></p>
+              <p class="grey-text bold">2015-2016</p>
+              <p class="grey-text bold">2019-2020</p>
             </div>
             <div class="col s12 m9 l10 animate fadeInRightBig">
               <p class="grey-text">Brevet des collèges - <strong>Mention: Assez bien</strong></p>
@@ -309,7 +302,7 @@
             <h3 class="white-text center bebas animate fadeInLeftBig">Expériences professionnelles</h3>
             <div class="divider animate fadeIn"></div>
             <div class="col s12 m3 l2 animate fadeInLeftBig">
-              <p class="grey-text"><strong>2015-2016</strong></p>
+              <p class="grey-text bold">2015-2016</p>
             </div>
             <div class="col s12 m9 l10 animate fadeInRightBig">
               <p class="grey-text">Stage de 3ème à l'école vétérinaire de La Croix Cadeau, Avrillé</p>
@@ -320,7 +313,7 @@
             <div class="divider animate fadeIn"></div>
             <div class="row">
               <div class="col s12 m3 l2 animate fadeInLeftBig">
-                <p><p class="grey-text"><strong>Anglais</strong></p></p>
+                <p class="grey-text bold">Anglais</p>
               </div>
               <div class="col s12 m9 l10 animate fadeInRightBig">
                 <p class="grey-text">Je possède le niveau B2+, j'ai <strong><i>17,26/20</i></strong> comme moyenne pour les deux trimestres</p>
@@ -329,11 +322,60 @@
             </div>
             <div class="row">
               <div class="col s12 m3 l2 animate fadeInLeftBig">
-                <p class="grey-text"><strong>Espanol</strong></p>
+                <p class="grey-text bold">Espanol</p>
               </div>
               <div class="col s12 m9 l10 animate fadeInRightBig">
                 <p class="grey-text">Je possède le niveau B1, j'ai <strong><i>15,18/20</i></strong> comme moyenne pour les deux trimestres</p>
                 <input type="text" class="espslider"/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m3 l2 animate fadeInLeftBig">
+                <p class="grey-text bold">Langages informatiques</p>
+              </div>
+              <div class="col s12 m9 l10 animate fadeInRightBig">
+                <p class="grey-text">Voici une liste des langages/framework/... que j'ai utilisé lors de la création de mes projets.</p>
+                <div class="card material-table grey darken-7">
+                  <div class="table-header">
+                    <span class="table-title grey-text">Langages et framework</span>
+                    <div class="actions">
+                      <a href="#search" class="search-toggle waves-effect btn-flat nopadding"><i class="material-icons">search</i></a>
+                    </div>
+                  </div>
+                  <table id="languages" class="striped">
+                    <thead>
+                      <tr>
+                        <th class="hide">level</th>
+                        <th>Langages</th>
+                        <th>Niveau</th>
+                      </tr>
+                    </thead>
+                    <tbody class="grey darken-6">
+                      <?php
+                          $reponse = $bdd->query('SELECT * FROM languages');
+                          while ($data = $reponse->fetch()) {
+                      ?>
+                        <tr>
+                          <td class="hide"><?= $data['mastery'] ?></td>
+                          <td class="grey-text bold"><?= $data['object'] ?></td>
+                          <?php
+                          switch ($data['mastery']) {
+                            case 0:
+                                echo "<td class='grey-text'><i class='fas fa-star'></i> <i class='far fa-star'> <i class='far fa-star'> <i class='far fa-star'> <i class='far fa-star'> Débutant</td>";
+                                break;
+                            case 1:
+                                echo "<td class='grey-text'><i class='fas fa-star'></i> <i class='fas fa-star'></i> <i class='fas fa-star'></i> <i class='far fa-star'> <i class='far fa-star'> Avancé</td>";
+                                break;
+                            case 2:
+                                echo "<td class='grey-text'><i class='fas fa-star'></i> <i class='fas fa-star'></i> <i class='fas fa-star'></i> <i class='fas fa-star'></i> <i class='far fa-star'></i> Expert</td>";
+                                break;
+                          } ?>
+                        </tr>
+                      <?php }
+                      $reponse->closeCursor(); ?>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div> <br> <br> <br>
@@ -341,11 +383,19 @@
             <h3 class="white-text center bebas animate fadeInLeftBig">Autres expériences et hobbies</h3>
             <div class="divider animate fadeIn"></div>
             <div class="col s12 m3 l2 animate fadeInLeftBig">
-              <p class="grey-text"><strong>date</strong></p>
+              <p class="grey-text bold">Photoshop</p>
             </div>
             <div class="col s12 m9 l10 animate fadeInRightBig">
-              <p class="grey-text"><strong>text text text text text text text text text text text text text
-              text text text text text text text text text text text text text text text text vv</strong></p>
+              <p class="grey-text">Pour mes projets j'ai souvent eu besoin de faire des logos ou bien de modifier des images. Voila quelques exemples:</p>
+                <?php
+                    $reponse = $bdd->query('SELECT * FROM image_showcase');
+                    while ($data = $reponse->fetch()) {
+                ?>
+                <div class="col s12 m4 l3">
+                  <img src="assets/img/logo/<?= $data['image'] ?>" alt="<?= $data['image_name'] ?>" class="resize_small tooltipped center materialboxed" style="width:70%;" data-position="bottom" data-tooltip="<?= $data['image_desc'] ?>" data-caption="<?= $data['image_desc'] ?>">
+                </div>
+              <?php }
+              $reponse->closeCursor(); ?>
             </div>
           </div>
         </div>
@@ -353,6 +403,8 @@
       <?php include('assets/resources/elements/footer.php') ?>
       <?php include('assets/resources/meta/scripts.php') ?>
       <script src="assets/js/api_github.min.js"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/r-2.2.3/datatables.min.js"></script>
+      <script src="assets/js/datatables.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
       <script type="text/javascript">
         $(".enslider").ionRangeSlider({

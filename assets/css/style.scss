@@ -894,6 +894,13 @@ table.highlight > tbody > tr:hover {
   color: white;
 }
 
+/* Range Slider */
+.irs--flat .irs-from,.irs--flat .irs-to,.irs--flat .irs-single {background-color: #9e9e9e!important; color:black;}
+.irs--flat .irs-from:before,.irs--flat .irs-to:before,.irs--flat .irs-single:before {border-top-color: white!important;}
+.irs--flat .irs-bar {background-color: #212121!important;}
+.irs--flat .irs-handle.state_hover>i:first-child,.irs--flat .irs-handle:hover>i:first-child {background-color: #9e9e9e!important}
+.irs--flat .irs-handle>i:first-child {background-color: white!important;}
+
 /* Footer - links */
 .github,.twitter,.mailto,.licence,.link,.stargazers,.fork {
   color: #9e9e9e;
