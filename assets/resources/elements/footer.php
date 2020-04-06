@@ -36,7 +36,7 @@
 </footer>
 <div id="license" class="modal bottom-sheet grey lighten-4">
   <div class="modal-content">
-    <h4>MIT LICENSE <a href="#!" class="modal-close right"><span class="material-icons center">close</span></a></h4>
+    <h4>MIT LICENSE <a href="#!" class="modal-close right"><span class="material-icons black-text center">close</span></a></h4>
     <iframe src="https://tholeb.github.io/tholeb.fr/" style="width:100%; height:30vh; border:none;">
       <p>Your browser does not support iframes.</p>
     </iframe>
