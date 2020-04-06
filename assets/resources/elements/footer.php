@@ -29,8 +29,19 @@
         <a class="mailto footer-icons" href="mailto:tholeb.pro@gmail.com"><i class="far fa-envelope"></i></a>
         <a class="github footer-icons" href="https://github.com/tholeb/" ><i class="fab fa-github"></i></a>
         <a class="twitter footer-icons" href="https://twitter.com/tholeb_"><i class="fab fa-twitter"></i></a>
-        <a class="licence footer-icons" href="https://github.com/tholeb/tholeb.fr/blob/master/LICENSE">MIT Licence</a>
+        <a class="licence footer-icons modal-trigger" href="#license">MIT License</a>
       </span>
     </div>
   </div>
 </footer>
+<div id="license" class="modal">
+  <div class="modal-content">
+    <h4>MIT LICENSE</h4>
+    <iframe src="https://raw.githubusercontent.com/tholeb/tholeb.fr/master/LICENSE">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
+</div>
