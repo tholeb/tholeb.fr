@@ -23,8 +23,10 @@
     </div>
 <?php endif; ?>
 <ul class="sidenav grey darken-7" id="sidenav">
-  <li><a href="sass.html" class="grey-text">Sass</a></li>
-  <li><a href="badges.html">Components</a></li>
-  <li><a href="collapsible.html">Javascript</a></li>
-  <li><a href="mobile.html">Mobile</a></li>
+  <li><a href="<?= $wURL; ?>#" class="grey-text"><i class="material-icons grey-text left">home</i> Home</a></li>
+  <li><a href="<?= $wURL; ?>#about" class="grey-text"><i class="material-icons grey-text left">help</i> About me</a></li>
+  <li><a href="<?= $wURL; ?>#projects" class="grey-text"><i class="material-icons grey-text left">code</i> My projects</a></li>
+  <li><a href="<?= $wURL; ?>#github" class="grey-text"><i class="fab fa-github grey-text material-icons left"></i> My github</a></li>
+  <li><a href="<?= $wURL; ?>#cv" class="grey-text"><i class="fas fa-address-book material-icons grey-text left"></i> CV</a></li>
+  <li><a href="mailto:tholeb.pro@gmail.com" class="grey-text"><i class="far fa-envelope material-icons grey-text left"></i> Contact me</a></li>
 </ul>

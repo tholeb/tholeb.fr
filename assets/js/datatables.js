@@ -198,6 +198,6 @@ $(document).ready(function() {
     },
     bAutoWidth: true,
     responsive: true,
-    paging: true
+    paging: false
   });
 });

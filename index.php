@@ -352,7 +352,7 @@
                     </thead>
                     <tbody class="grey darken-6">
                       <?php
-                          $reponse = $bdd->query('SELECT * FROM languages');
+                          $reponse = $bdd->query('SELECT * FROM languages ORDER BY mastery ASC');
                           while ($data = $reponse->fetch()) {
                       ?>
                         <tr>
