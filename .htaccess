@@ -10,10 +10,10 @@ RewriteRule ^error/500$  ./errors.php?error=500 [L]
 RewriteRule ^error/503$  ./errors.php?error=503 [L]
 RewriteRule ^error/$  ./errors.php [L]
 # Ht Errors
-ErrorDocument 404 /tholeb.fr/error/404
-ErrorDocument 403 /tholeb.fr/error/403
-ErrorDocument 500 /tholeb.fr/error/500
-ErrorDocument 503 /tholeb.fr/error/503
+ErrorDocument 404 /error/404
+ErrorDocument 403 /error/403
+ErrorDocument 500 /error/500
+ErrorDocument 503 /error/503
 
 php_flag display_startup_errors on
 php_flag display_errors on

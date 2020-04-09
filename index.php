@@ -59,7 +59,7 @@
                       <div class="row">
                           <div class="col l5 offset-l2">
                               <div class="hide-on-med-and-down right">
-                                  <a href="<?= $wURL; ?>projects" class="waves-effect pulse waves-light btn-large black grey-text text-lighten-4 z-depth-5" target="_blank">My projects</a>
+                                  <a href="<?= $wURL; ?>#projects" class="waves-effect pulse waves-light btn-large black grey-text text-lighten-4 z-depth-5" target="_blank">My projects</a>
                               </div>
                           </div>
                       </div>
@@ -305,7 +305,7 @@
               <p class="grey-text bold">2015-2016</p>
             </div>
             <div class="col s12 m9 l10 animate fadeInRightBig">
-              <p class="grey-text">Stage de 3ème à l'école vétérinaire de La Croix Cadeau, Avrillé</p>
+              <p class="grey-text">Stage de 3ème à la clinique vétérinaire de La Croix Cadeau, Avrillé</p>
             </div>
           </div> <br> <br> <br>
           <div class="row">
